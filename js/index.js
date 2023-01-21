@@ -27,7 +27,6 @@ document.getElementById('start-button').onclick = () => {
 }
 
 
-
 /* 
 image.onload = () => {
   
