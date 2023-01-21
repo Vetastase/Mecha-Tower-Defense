@@ -17,7 +17,6 @@ function startGame () {
 newChar.drawmecha() 
 
 
-
 }
 
 
