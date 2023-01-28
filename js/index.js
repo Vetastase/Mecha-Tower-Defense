@@ -16,7 +16,7 @@ class Background {
     this.y = 0;
     this.width = myCanvas.width;
     this.height = myCanvas.height;
-    this.img = "../images/gamemap.png";
+    this.img = "./images/gamemap.png";
   }
 
   drawBackground() {
@@ -35,7 +35,7 @@ class Mecha {
     // insert properties/keys after known properties/keys to show up in the constructor
     this.x = x;
     this.y = y;
-    this.img = "../images/GMS SAGARMATHA SP-2.png";
+    this.img = "./images/GMS SAGARMATHA SP-2.png";
   }
 
   drawmecha() {
@@ -94,7 +94,7 @@ class Tower {
     this.x = x;
     this.y = y;
     this.img =
-      "../images/BloodMoonTower_cover_free_version-removebg-preview.png";
+      "./images/BloodMoonTower_cover_free_version-removebg-preview.png";
   }
 
   drawtower() {
@@ -121,7 +121,7 @@ class Bullets {
     this.height = 20;
     this.x = x;
     this.y = y;
-    this.img = "../images/weapon_0063_Package-----------------.png";
+    this.img = "./images/weapon_0063_Package-----------------.png";
   }
 
   draw() {
