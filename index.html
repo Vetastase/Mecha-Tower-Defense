@@ -12,16 +12,35 @@
         <button id="start-button">StartGame</button>
         <div id="score-div">
           <p>Score: <span id="score"> 0 </span></p>
+          <img src="./images/yg_14a.png">
         </div>
-      </div>
+        </div>
+     
+      
       <div id="game-board">
-        <canvas id="mecha-canvas" width="1500" height="800"></canvas>
-      </div>
+        <canvas id="mecha-canvas" width="1280" height="768"></canvas>
+
+      <button style="display: none;"> Restart </button>
+    <button style="display: none;"> Pause </button>
+
+      <div id="game-over" style="display: none;">
+        <h1>
+            Game Over
+        </h1>
+
+        <button style="display: none;"> Play Again </button>
+    </div> 
+    <div id="win" style="display: none;">
+      <h1>You won!</h1>
+    </div>
   
+    <script src="js/placementtiles.js"></script>
+    <script src="js/waypoints.js"></script>
     <script src="js/index.js"></script>
     <script src="js/mecha.js"></script>
     <script src="js/background.js"></script>
     <script src="js/tower.js"></script>
+    <script src="js/tiles.js"></script>
 
     
 </body>
