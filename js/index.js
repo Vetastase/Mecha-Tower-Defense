@@ -5,6 +5,7 @@ const ctx = myCanvas.getContext("2d");
 let myGame;
 let myTower;
 let isGameOver;
+let buttonEL = document.querySelector("#play-again");
 let frames = 0;
 let bulletsArray = [];
 let realScore = 0
@@ -60,12 +61,12 @@ class Mecha {
 }
 // start from canvas zero top left corner
 moveUp() {
-  if (this.y > 0){
+  if (this.y > 150){
   this.y -= 15;
   }
 }
 moveDown() {
-  if (this.y + this.height < myCanvas.height){
+  if (this.y + this.height < myCanvas.height - 190){
   this.y += 15;
   }
 }
@@ -254,6 +255,18 @@ function startGame() {
 document.getElementById("start-button").onclick = () => {
   startGame();
 };
+
+buttonEL.addEventListener("click", () => {
+  moveBullets()
+  checkCollision()
+  scoreFunction()
+  bulletSpeed()
+  win()
+})
+
+Tower()
+Mecha()
+
 
 
 /*document.getElementById("restart").addEventListener("click", () => {
